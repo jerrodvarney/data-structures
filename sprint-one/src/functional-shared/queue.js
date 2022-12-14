@@ -28,7 +28,7 @@ queueMethods.dequeue = function() {
     this.storage[key - 1] = this.storage[key];
     delete this.storage[key];
   }
-  console.log(this.storage);
+
   return temp;
 };
 
