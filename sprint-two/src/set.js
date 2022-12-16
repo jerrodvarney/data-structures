@@ -1,28 +1,28 @@
 var Set = function() {
   var set = Object.create(setPrototype);
-  set.storage = [];
+  set._storage = [];
   return set;
 };
 
 var setPrototype = {};
 
 setPrototype.add = function(item) {
-  if (this.storage.indexOf(item) !== -1) {
+  if (this._storage.indexOf(item) !== -1) {
     return;
   }
-  this.storage.push(item);
+  this._storage.push(item);
 };
 
 setPrototype.contains = function(item) {
-  for (var index in this.storage) {
-    if (this.storage[index] === item) { return true; }
+  for (var index in this._storage) {
+    if (this._storage[index] === item) { return true; }
   }
   return false;
 };
 
 setPrototype.remove = function(item) {
-  if (this.storage.indexOf(item) !== -1) {
-    delete this.storage[this.storage.indexOf(item)];
+  if (this._storage.indexOf(item) !== -1) {
+    delete this._storage[this._storage.indexOf(item)];
   }
 };
 
