@@ -50,3 +50,18 @@ var Node = function(value) {
 /*
  * Complexity: What is the time complexity of the above functions?
  */
+
+/**
+ * addToTail
+ * best: O(1)
+ * worst: O(1)
+ *
+ *
+ * removeHead
+ * best: O(1)
+ * worst: O(1)
+ *
+ * contains
+ * best: O(1)
+ * worst: O(n)
+ */

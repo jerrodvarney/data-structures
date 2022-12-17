@@ -30,3 +30,17 @@ setPrototype.remove = function(item) {
 /*
  * Complexity: What is the time complexity of the above functions?
  */
+
+/**
+ * add
+ * best: O(1) - empty array
+ * worst: O(2n)
+ *
+ * contains
+ * best: O(1) - empty array
+ * worst: O(2n)
+ *
+ * remove
+ * best: O(1) - empty array
+ * worst: O(2n)
+ */

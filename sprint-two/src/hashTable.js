@@ -51,7 +51,7 @@ HashTable.prototype.remove = function(k) {
     }
   }
   this._storage.set(index, bucket);
-};art
+};
 
 
 
@@ -60,4 +60,18 @@ HashTable.prototype.remove = function(k) {
  * Complexity: What is the time complexity of the above functions?
  */
 
-
+/**
+ * EACH METHOD IS NEAR CONSTANT
+ *
+ * insert
+ * best: O(1) - no string argument for getIndexBelowMaxForKey, and emtpy HashTable (lol)
+ * worst: O(n + k.length)
+ *
+ * retrieve
+ * best: O(1) - no string argument for getIndexBelowMaxForKey, and emtpy HashTable (lol)
+ * worst: O(2n + k.length)
+ *
+ * remove
+ * best: O(1) - no string argument for getIndexBelowMaxForKey, and emtpy HashTable (lol)
+ * worst:O(n + k.length)
+ */

@@ -73,3 +73,17 @@ methods.depthFirstLog = function(cb) {
 /*
  * Complexity: What is the time complexity of the above functions?
  */
+
+/**
+ * insert
+ * best: O(1) - empty array
+ * worst: O(2 * log n)
+ *
+ * contains
+ * best: O(1) - empty array
+ * worst: O(2 * log n)
+ *
+ * depthFirstLog
+ * best: O(1) - empty array
+ * worst: O(2 * log n * cb)
+ */
